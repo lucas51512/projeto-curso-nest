@@ -10,11 +10,11 @@ import { StartupModule } from './startup/startup.module';
       type: 'mysql',
       host: 'localhost',
       port: 3306,
-      username: 'root',
-      password: 'casa1522',
-      database: 'projeto_pronto',
+      username: 'root', // Usuario do xampp padrão
+      password: '', // Senha do xampp padrão
+      database: 'projeto_pronto', // Alterar para o nome do seu banco de dados local
       entities: [
-        __dirname + '**/*.entity.{.ts,.js}'
+        __dirname + '**/*.entity.{.ts,.js}' // Mapeamento das entidades
       ],
       synchronize: true,
       autoLoadEntities: true,
